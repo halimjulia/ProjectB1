@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.asus.animationb1.kiri712">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivLeft712"
+            android:scaleType="fitXY"
+            android:background="@drawable/kiri712"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn721"
+            android:background="@drawable/ic_place2"
+            android:layout_marginEnd="83dp"
+            android:layout_alignTop="@+id/ivLeft712"
+            android:layout_alignEnd="@+id/ivLeft712"
+            android:layout_marginTop="38dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn700"
+            android:background="@drawable/ic_place2"
+            android:layout_below="@+id/btn721"
+            android:layout_toStartOf="@+id/btn721"
+            android:layout_marginEnd="137dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/fab"/>
+
+</RelativeLayout>

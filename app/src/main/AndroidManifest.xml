@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.animationb1" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ZoomIn"
+            android:label="@string/title_activity_zoom_in" >
+        </activity>
+        <activity
+            android:name=".Lantai7"
+            android:label="@string/title_activity_lantai7"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ExecutiveLounge"
+            android:label="@string/title_activity_executive_lounge" >
+        </activity>
+        <activity
+            android:name=".Kiri7"
+            android:label="@string/title_activity_kiri7" >
+        </activity>
+        <activity
+            android:name=".Kanan7"
+            android:label="@string/title_activity_kanan7" >
+        </activity>
+        <activity
+            android:name=".kiri712"
+            android:label="@string/title_activity_kiri712" >
+        </activity>
+        <activity
+            android:name=".kanan712"
+            android:label="@string/title_activity_kanan712" >
+        </activity>
+        <activity
+            android:name=".Kelas722"
+            android:label="@string/title_activity_kelas722" >
+        </activity>
+        <activity
+            android:name=".Lantai8"
+            android:label="@string/title_activity_lantai8" >
+        </activity>
+        <activity
+            android:name=".Lorong722"
+            android:label="@string/title_activity_lorong722" >
+        </activity>
+        <activity
+            android:name=".Ruang722"
+            android:label="@string/title_activity_ruang722" >
+        </activity>
+        <activity
+            android:name=".Lantai8Kanan"
+            android:label="@string/title_activity_lantai8_kanan" >
+        </activity>
+        <activity
+            android:name=".Lantai8Kiri"
+            android:label="@string/title_activity_lantai8_kiri" >
+        </activity>
+        <activity
+            android:name=".Kanan812"
+            android:label="@string/title_activity_kanan812" >
+        </activity>
+        <activity
+            android:name=".Kiri812"
+            android:label="@string/title_activity_kiri812" >
+        </activity>
+        <activity
+            android:name=".Jalan_activity"
+            android:label="@string/title_activity_jalan_activity" >
+        </activity>
+    </application>
+
+</manifest>

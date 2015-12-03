@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AnimationB1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_zoom_in">ZoomIn</string>
+    <string name="title_activity_lantai7">Lantai7</string>
+    <string name="title_activity_executive_lounge">ExecutiveLounge</string>
+    <string name="title_activity_kiri7">Kiri7</string>
+    <string name="title_activity_kanan7">Kanan7</string>
+    <string name="title_activity_kiri712">kiri712</string>
+    <string name="title_activity_kanan712">kanan712</string>
+    <string name="title_activity_kelas722">Kelas722</string>
+    <string name="title_activity_lantai8">Lantai8</string>
+    <string name="title_activity_lorong722">Lorong722</string>
+    <string name="title_activity_ruang722">Ruang722</string>
+    <string name="title_activity_lantai8_kanan">Lantai8Kanan</string>
+    <string name="title_activity_lantai8_kiri">Lantai8Kiri</string>
+    <string name="title_activity_kanan812">Kanan812</string>
+    <string name="title_activity_kiri812">Kiri812</string>
+    <string name="title_activity_jalan_activity">Jalan_activity</string>
+</resources>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.asus.animationb1.Kanan7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivRight7"
+                android:scaleType="fitXY"
+                android:background="@drawable/kanan7"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRight712"
+                android:background="@drawable/btn_right"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/ivRight7"
+                android:layout_marginEnd="125dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLeft712"
+                android:background="@drawable/btn_left"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/btnRight712"
+                android:layout_marginEnd="77dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/fab"/>
+</RelativeLayout>

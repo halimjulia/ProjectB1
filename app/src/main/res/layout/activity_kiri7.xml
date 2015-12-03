@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#000"
+    tools:context="com.example.asus.animationb1.Kiri7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivLeft7"
+            android:scaleType="fitXY"
+            android:background="@drawable/kiri7"/>
+    </RelativeLayout>
+
+    <include layout="@layout/fab"/>
+
+</LinearLayout>
