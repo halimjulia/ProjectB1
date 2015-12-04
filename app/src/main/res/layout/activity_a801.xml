@@ -2,19 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context="com.example.asus.animationb1.Kiri7">
+    tools:context="com.example.asus.animationb1.A801">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/layout">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ivLeft7"
+            android:id="@+id/ivA801"
             android:scaleType="fitXY"
-            android:background="@drawable/kiri7"/>
+            android:background="@drawable/a801"/>
+
     </RelativeLayout>
 
     <include layout="@layout/fab"/>

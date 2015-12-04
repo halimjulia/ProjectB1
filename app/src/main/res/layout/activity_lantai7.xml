@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ivHome7"
+            android:id="@+id/ivHome"
             android:scaleType="fitXY"
             android:background="@drawable/lantai7"/>
 

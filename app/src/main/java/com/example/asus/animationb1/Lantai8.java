@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Lantai8 extends Jalan_activity {
-    ImageView ivLantai8;
+
     ImageButton btnLeft , btnRight;
 
     @Override
@@ -20,16 +20,8 @@ public class Lantai8 extends Jalan_activity {
 
         AnimationIn();
 
-        ivLantai8 = (ImageView)findViewById(R.id.ivLantai8);
-        btnRight = (ImageButton)findViewById(R.id.btnRight);
-        btnLeft = (ImageButton)findViewById(R.id.btnLeft);
-
-        btnRight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeActivity(Lantai8Kanan.class);
-            }
-        });
+        btnLeft = (ImageButton)findViewById(R.id.btnKiri);
+        btnRight = (ImageButton)findViewById(R.id.btnKanan);
 
         btnLeft.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +29,10 @@ public class Lantai8 extends Jalan_activity {
                 changeActivity(Lantai8Kiri.class);
             }
         });
+
+        btnRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {changeActivity(Lantai8Kanan.class);}});
     }
 
     @Override

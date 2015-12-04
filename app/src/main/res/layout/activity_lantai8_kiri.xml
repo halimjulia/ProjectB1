@@ -15,6 +15,15 @@
         android:id="@+id/ivKiri"
         android:scaleType="fitXY"
         android:background="@drawable/lantai8_kiri"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnA801"
+            android:background="@drawable/ic_place2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
     </RelativeLayout>
 
     <include layout="@layout/fab"/>

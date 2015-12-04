@@ -1,5 +1,6 @@
 package com.example.asus.animationb1;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.design.widget.FloatingActionButton;
@@ -9,11 +10,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
-public class Jalan_activity extends AppCompatActivity implements View.OnClickListener {
+public class Jalan_activity extends Activity implements View.OnClickListener {
 
     private Boolean isFabOpen = false;
     private FloatingActionButton fab,fab1,fab2,fab3;
@@ -49,6 +52,9 @@ public class Jalan_activity extends AppCompatActivity implements View.OnClickLis
         RelativeLayout layout = (RelativeLayout)findViewById(R.id.layout);
         Animation fadeIn = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
 
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
         layout.startAnimation(fadeIn);
 
         fab = (FloatingActionButton)findViewById(R.id.fab);
@@ -60,17 +66,28 @@ public class Jalan_activity extends AppCompatActivity implements View.OnClickLis
         rotate_forward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_forward);
         rotate_backward = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
         fab.setOnClickListener(this);
-        fab1.setOnClickListener(this);
+        fab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
         fab2.setOnClickListener(this);
         fab3.setOnClickListener(this);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
 
         //orientation screen always landscape
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+
+
 
 
 

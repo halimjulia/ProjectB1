@@ -14,6 +14,20 @@ tools:context=".MainActivity">
         android:id="@+id/btnLantai7"
         android:text="Lantai 7"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLantai8"
+        android:text="Lantai 8"
+        android:layout_below="@+id/btnLantai7"
+        android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLantai9"
+        android:text="Lantai 9"
+        android:layout_below="@+id/btnLantai8"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

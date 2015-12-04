@@ -1,43 +1,45 @@
 package com.example.asus.animationb1;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
-public class Lantai8Kiri extends Jalan_activity {
+public class Lantai9 extends Jalan_activity {
 
-    ImageView ivKiri;
-    ImageButton btnA801;
+    ImageButton btnLeft , btnRight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lantai8_kiri);
+        setContentView(R.layout.activity_lantai9);
 
         AnimationIn();
 
-        ivKiri = (ImageView)findViewById(R.id.ivKiri);
-        btnA801 = (ImageButton)findViewById(R.id.btnA801);
-        btnA801.setOnClickListener(new View.OnClickListener() {
+        btnLeft = (ImageButton)findViewById(R.id.btnKiri);
+        btnRight = (ImageButton)findViewById(R.id.btnKanan);
+
+        btnLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), A801.class);
-                startActivity(i);
-                finish();
+                //changeActivityLantai9Kiri.class);
             }
         });
 
+        btnRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //changeActivity(Lantai9Kanan.class);
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_lantai8_kiri, menu);
+        getMenuInflater().inflate(R.menu.menu_lantai9, menu);
         return true;
     }
 

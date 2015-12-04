@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -18,16 +20,23 @@ import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLantai7;
+    Button btnLantai7, btnLantai8, btnLantai9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Remove title bar
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        //Remove notification bar
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btnLantai7 = (Button)findViewById(R.id.btnLantai7);
+        btnLantai8 = (Button)findViewById(R.id.btnLantai8);
+        btnLantai9 = (Button)findViewById(R.id.btnLantai9);
+
         btnLantai7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +46,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLantai8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Lantai8.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        btnLantai9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Lantai9.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
 
 

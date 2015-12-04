@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.asus.animationb1" >
 
+    <!-- <application android:theme="@android:style/Theme.NoTitleBar"> -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -80,6 +81,14 @@
         <activity
             android:name=".Jalan_activity"
             android:label="@string/title_activity_jalan_activity" >
+        </activity>
+        <activity
+            android:name=".Lantai9"
+            android:label="@string/title_activity_lantai9" >
+        </activity>
+        <activity
+            android:name=".A801"
+            android:label="@string/title_activity_a801" >
         </activity>
     </application>
 

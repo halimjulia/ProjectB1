@@ -16,8 +16,10 @@ public class Lantai7 extends Jalan_activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lantai7);
+
 
         AnimationIn();
 
